@@ -472,6 +472,8 @@ MonoBehaviour:
   - {fileID: 1774567775}
   - {fileID: 63068032}
   - {fileID: 1167645714}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!4 &197604305
 Transform:
   m_ObjectHideFlags: 0
