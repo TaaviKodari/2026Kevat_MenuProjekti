@@ -53,4 +53,10 @@ public class Selector : MonoBehaviour
         Debug.Log("Selected: " + items[i].text);
     }
 
+    public void SetIndex(int newIndex)
+    {
+        index = newIndex;
+        UpdateColors();
+    }
+
 }
