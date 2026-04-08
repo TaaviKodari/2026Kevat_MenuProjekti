@@ -1113,7 +1113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scenes
+  m_text: Pikkupelit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d43e2f9bdb878c34497d96d4d1ab6bc0, type: 2}
   m_sharedMaterial: {fileID: 621270468012018952, guid: d43e2f9bdb878c34497d96d4d1ab6bc0, type: 2}
