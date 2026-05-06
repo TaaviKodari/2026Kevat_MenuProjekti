@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    public float startSpeed = 6f;
     private Rigidbody2D rb;
 
     void Awake()
@@ -17,6 +18,11 @@ public class Ball : MonoBehaviour
 
     public void Launch()
     {
-        rb.linearVelocity = Vector2.up * 100;
+        rb.linearVelocity = Vector2.zero;
+
+        //Satunnainen x-suunta ylöspäin
+        Vector2 dir = new Vector2(Random.Range(-0.7f, 0.7f) , 1f).normalized;
+
+        rb.linearVelocity = dir * startSpeed;
     }
 }
