@@ -400,6 +400,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeed: 6
+--- !u!1 &167670059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167670061}
+  - component: {fileID: 167670060}
+  m_Layer: 0
+  m_Name: PauseSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &167670060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167670059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a21b0a9955fc444a837bc8a590ef19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 1567032108}
+  - {fileID: 524846200}
+  - {fileID: 1103907721}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  pauseMenu: {fileID: 107515276}
+--- !u!4 &167670061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167670059}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.26223844, y: -0.5680225, z: 4.286113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &203175774
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +575,7 @@ GameObject:
   - component: {fileID: 524846199}
   - component: {fileID: 524846201}
   - component: {fileID: 524846200}
+  - component: {fileID: 524846202}
   m_Layer: 5
   m_Name: MainMenuText (TMP)
   m_TagString: Untagged
@@ -650,6 +702,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524846198}
   m_CullTransparentMesh: 1
+--- !u!114 &524846202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524846198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f87f16af1e25ee4d8d1570f649ef8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selector: {fileID: 167670060}
+  index: 1
 --- !u!1 &619467019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,6 +1098,7 @@ GameObject:
   - component: {fileID: 1103907720}
   - component: {fileID: 1103907722}
   - component: {fileID: 1103907721}
+  - component: {fileID: 1103907723}
   m_Layer: 5
   m_Name: QuitText (TMP)
   m_TagString: Untagged
@@ -1158,6 +1225,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103907719}
   m_CullTransparentMesh: 1
+--- !u!114 &1103907723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103907719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f87f16af1e25ee4d8d1570f649ef8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selector: {fileID: 167670060}
+  index: 2
 --- !u!1 &1393244705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1473,7 @@ GameObject:
   - component: {fileID: 1567032107}
   - component: {fileID: 1567032109}
   - component: {fileID: 1567032108}
+  - component: {fileID: 1567032110}
   m_Layer: 5
   m_Name: ResumeText (TMP)
   m_TagString: Untagged
@@ -1518,6 +1600,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567032106}
   m_CullTransparentMesh: 1
+--- !u!114 &1567032110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567032106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f87f16af1e25ee4d8d1570f649ef8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selector: {fileID: 167670060}
+  index: 0
 --- !u!1 &1610202999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,3 +1943,4 @@ SceneRoots:
   - {fileID: 1506917807}
   - {fileID: 133663621}
   - {fileID: 355981482}
+  - {fileID: 167670061}
